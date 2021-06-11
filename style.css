@@ -1,0 +1,297 @@
+
+/*STYLES GENERAUX*/
+
+*{
+    font-family: arial, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    text-align: justify;
+    box-sizing: border-box;
+    color: white
+}
+body{
+    background: rgb(64,64,64);
+}
+p{
+    font-size: 1em;
+    line-height: 1.5em;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+/*HEADER & FOOTER*/
+header, footer{
+    width: 100%;
+    padding: 20px 0px;
+    background: url("fond.jpg") no- repeat rgb(64,64,64);
+    background-size: 100%;
+    box-shadow: 0px 0px 15px grey;
+}
+header{
+    border-bottom: 2px solid rgb(74,172,198);
+    height: 120px;
+}
+header h1{
+    color: white;
+    font-size: 1.5em;
+    width: 90%;
+    margin: 0 auto;
+}
+
+footer{
+    border-top: 2px solid rgb(74,172,198);
+}
+footer p{
+    width: 90%;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+}
+footer a{
+    color: #fff;
+}
+
+/*SECTIONS*/
+section{
+    display: flex; 
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 20px;
+    margin: 20px auto;
+    box-shadow: 0px 0px 10px grey;
+    background-color: rgb(64,64,64);
+}
+
+section h2{
+    margin: 20px 0;
+    width: 90%;
+}
+section > div{
+    width: 90%;
+}
+
+/*SECTION INFOS*/
+.photo{
+    text-align: center;
+}
+.photo img{
+    width: 150px;
+    height: 150px;
+    border: 3px solid rgb(74,172,198);
+    box-shadow: 0px 0px 10px grey;
+    border-radius: 50%;
+    margin-top: -80px;
+    object-fit: cover;
+}
+.presentation{
+    border-bottom: 2px dashed rgb(74,172,198);
+    padding-bottom: 20px;
+}
+.presentation a{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto 30px auto;
+    color: black;
+    background-color: rgb(74,172,198);
+    box-shadow: 0px 0px 10px grey;
+    border-radius: 5px;
+}
+.contact-flex{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+.contact-flex p:first-child{
+    flex: 0 0 40%;
+}
+.contact-flex p:last-child{
+    flex: 0 0 60%;
+}
+
+.contact-flex a
+{
+    color: rgb(74,172,198)
+}
+
+/*SECTION EXP ET FORMATION*/
+.exp{
+    display: flex;
+    flex-flow: row wrap;
+    border-bottom: 1px solid rgb(74,172,198);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.exp-info{
+    display: flex;
+    flex-flow: column wrap;
+}
+.exp-logo{
+    flex: 0 0 25%;
+    max-width: 100px;
+    margin-right: 30px;
+}
+.exp-info{
+    flex: 0 0 70%;
+    margin-left: auto;
+}
+.exp img{
+    width: 100%;
+    
+}
+.exp h3{
+    font-size:  1.2em;
+}
+.exp h4{
+    font-size:  1em;
+    font-weight: normal;
+}
+.flex{
+    display: flex;
+    width: 100%;
+}
+.flex:not(:last-child){
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(74,172,198);
+}
+
+/*SECTION COMPETENCES*/
+.h3gauche{
+    width: 90%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(74,172,198);
+}
+.comp{
+    display:flex;
+    flex-flow: row wrap;
+    margin-bottom: 10px;
+}
+.comp p{
+    flex: 0 0 40%;
+}
+.conteneur-barre{
+    flex: 0 0 60%;
+    border-radius: 5px;
+    background-color: black;
+    border-bottom: 1px ridge rgb(74,172,198);
+}
+.barre{
+    display: block;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.c60{
+    width: 60%;
+    background-color: rgb(74,172,198);
+}
+.c65{
+    width: 65%;
+    background-color: rgb(74,172,198);
+}
+.c70{
+    width: 70%;
+    background-color: rgb(74,172,198);
+}
+.c75{
+    width: 75%;
+    background-color: rgb(74,172,198);
+}
+.c80{
+    width: 80%;
+    background-color: rgb(74,172,198);
+}
+.c85{
+    width: 85%;
+    background-color: rgb(74,172,198);
+}
+.c90{
+    width: 90%;
+    background-color: rgb(74,172,198);
+}
+.c95{
+    width: 95%;
+    background-color: rgb(74,172,198);
+}
+.c100{
+    width: 100%;
+    background-color: rgb(74,172,198);
+    border-radius: 5px;
+}
+.comp2{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.conteneur-barre2{
+    flex: 0 0 100%;
+    height: 0.5em;
+    margin-bottom: 0.25em;
+    border-radius: 5px;
+    background-color: grey;
+}
+
+/*SECTION INTERETS*/
+.interet{
+    flex: 0 1 50%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.interet img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px grey;
+}
+
+/*VERSION BUREAU DU CV*/
+@media screen and (min-width: 980px){
+    section{
+        width: 80%;
+        box-shadow: 0px 0px 10px #bbb;
+    }
+    a:hover{
+        color: rgb(74,172,198);
+    }
+    header h1{
+        width: 80%;
+    }
+    .prez, .contact{
+        flex: 0 0 45%;
+    }
+    .prez{
+        border-bottom: none;
+        border-right: 2px solid rgb(74,172,198);
+        padding-right: 20px;
+        margin-left: auto;
+    }
+    .contact{
+        padding-left: 20px;
+        margin-right: auto;
+    }
+    .prez a{
+        border: 2px solid transparent;
+    }
+    .prez a:hover{
+        color: #f28835;
+        background-color: #fff;
+        border: 2px solid #f28835;
+        box-shadow: 0px 0px 20px #666;
+    }
+    .exp-logo{
+        flex: 0 0 10%;
+    }
+    .exp-info, .exp-desc{
+        flex: 0 0 85%;
+        margin-left: auto;
+    }
+    .interet{
+        flex: 0 1 25%;
+    }
+}

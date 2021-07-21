@@ -31,13 +31,24 @@ header, footer{
 }
 header{
     border-bottom: 2px solid rgb(74,172,198);
-    height: 120px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
+header p{
+    text-align: center;
+}
+
 header h1{
     color: white;
     font-size: 1.5em;
     width: 90%;
-    margin: 0 auto;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+header a {
+    color: white;
 }
 
 footer{
@@ -100,24 +111,19 @@ section > div{
     box-shadow: 0px 0px 10px grey;
     border-radius: 5px;
 }
-.contact-flex{
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-}
-.contact-flex p:first-child{
-    flex: 0 0 40%;
-}
-.contact-flex p:last-child{
-    flex: 0 0 60%;
-}
-
-.contact-flex a
-{
-    color: rgb(74,172,198)
-}
-
 /*SECTION EXP ET FORMATION*/
+
+.projet h3{
+    padding-bottom: 20px;
+}
+.projet a {
+    color: white;
+}
+.projet:not(:last-child){
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgb(74,172,198);
+}
 .exp{
     display: flex;
     flex-flow: row wrap;
@@ -161,79 +167,29 @@ section > div{
 /*SECTION COMPETENCES*/
 .h3gauche{
     width: 90%;
-    margin-top: 50px;
+    margin-top: 10px;
     margin-bottom: 20px;
     border-bottom: 1px solid rgb(74,172,198);
 }
-.comp{
-    display:flex;
-    flex-flow: row wrap;
-    margin-bottom: 10px;
-}
-.comp p{
-    flex: 0 0 40%;
-}
-.conteneur-barre{
-    flex: 0 0 60%;
-    border-radius: 5px;
-    background-color: black;
-    border-bottom: 1px ridge rgb(74,172,198);
-}
-.barre{
-    display: block;
-    height: 100%;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-}
-.c60{
-    width: 60%;
-    background-color: rgb(74,172,198);
-}
-.c65{
-    width: 65%;
-    background-color: rgb(74,172,198);
-}
-.c70{
-    width: 70%;
-    background-color: rgb(74,172,198);
-}
-.c75{
-    width: 75%;
-    background-color: rgb(74,172,198);
-}
-.c80{
-    width: 80%;
-    background-color: rgb(74,172,198);
-}
-.c85{
-    width: 85%;
-    background-color: rgb(74,172,198);
-}
-.c90{
-    width: 90%;
-    background-color: rgb(74,172,198);
-}
-.c95{
-    width: 95%;
-    background-color: rgb(74,172,198);
-}
-.c100{
-    width: 100%;
-    background-color: rgb(74,172,198);
-    border-radius: 5px;
-}
-.comp2{
+.hardSkill{
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
 }
-.conteneur-barre2{
-    flex: 0 0 100%;
-    height: 0.5em;
-    margin-bottom: 0.25em;
-    border-radius: 5px;
-    background-color: grey;
+.hardSkill img{
+    width: 50px;
+    margin: 10px;
 }
+.skill-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.margin-bottom{
+    padding-bottom: 16px;
+    padding-top: 5px;
+}
+
 
 /*SECTION INTERETS*/
 .interet{
@@ -252,6 +208,14 @@ section > div{
 
 /*VERSION BUREAU DU CV*/
 @media screen and (min-width: 980px){
+    header{
+        height: 150px;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-around;
+    }
     section{
         width: 80%;
         box-shadow: 0px 0px 10px #bbb;
@@ -271,10 +235,7 @@ section > div{
         padding-right: 20px;
         margin-left: auto;
     }
-    .contact{
-        padding-left: 20px;
-        margin-right: auto;
-    }
+
     .prez a{
         border: 2px solid transparent;
     }
@@ -293,5 +254,9 @@ section > div{
     }
     .interet{
         flex: 0 1 25%;
+    }
+    .hardSkill img{
+        width: 60px;
+        margin: 20px;
     }
 }

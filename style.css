@@ -164,6 +164,93 @@ section > div{
     border-bottom: 1px solid rgb(74,172,198);
 }
 
+
+
+.all-card{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-container{
+    position: relative;
+    width: 320px;
+    height: 250px;
+    background: rgb(64,64,64);
+    margin: 10px;
+}
+.card{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.9s ease;
+}
+.card:hover{
+    transform: rotateY(180deg);
+}
+.front-card{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: rgb(74,172,198);
+    color: black;
+    border-radius: 20px;
+    text-align: center;
+}
+.front-card img{
+    height: 250px;
+    width: 320px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.back-card{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: white;
+    color: black;
+    transform: rotateY(180deg);
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.back-card p{
+    color: black;
+    text-align: center;
+}
+.back-card h3{
+    color: black;
+    text-align: center;
+}
+.back-card a{
+    margin: 0 auto;
+}
+.back-card button{
+    color: black;
+    background-color: rgb(74,172,198) ;
+    width: 100px;
+    text-align: center;
+    height: 30px;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+.overlay{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgb(74,172,198);
+    opacity: 0.7;
+    border-radius: 0 0 20px 20px;
+}
+.overlay h3{
+    text-align: center;
+    margin: 10px;
+    color: black;
+    backface-visibility: hidden;
+}
 /*SECTION COMPETENCES*/
 .h3gauche{
     width: 90%;
@@ -189,7 +276,9 @@ section > div{
     padding-bottom: 16px;
     padding-top: 5px;
 }
-
+.flex-competences p{
+    text-align: center;
+}
 
 /*SECTION INTERETS*/
 .interet{
